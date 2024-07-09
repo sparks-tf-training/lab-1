@@ -58,8 +58,9 @@
     Update `main.tf` to use the variables:
 
     ```hcl
-    data "azurerm_resource_group" "rg" {
+    resource "azurerm_resource_group" "rg" {
         name = var.resource_group
+       location = "France Central"
     }
     ```
 
